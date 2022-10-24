@@ -1,0 +1,351 @@
+:root {
+    --color: green;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Inter', sans-serif; */
+}
+
+.img-galeria {
+    width: 350px;
+    height: 320px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.hamburgesa{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform .3s ease-in-out;
+  transform: translate(110%);
+}
+
+.spread{
+     transform: translate(0);
+}
+.menu-navegacion a{
+    color: white;
+    text-decoration: none;
+}
+.titulo{
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.copy{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color:#9f8ad0;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+                                             seccion servicios 
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contenedor-servicio img{
+    width: 90%;
+    margin-bottom: 30px;
+}
+.checklist-servicio{
+    width: 90%;
+}
+.service{
+    margin-bottom: 20px;
+}
+.n-service{
+    margin-bottom: 7px;
+    color:#9f8ad0;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 8px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+                                             seccion galeria 
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.gallery{
+    background-color: #f2f2f2;
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.img-galeria{
+    width: 85%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.imagen-ligth{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .3s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+    width: 90%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.showimage{
+    transform: scale(1);
+}
+/* ---------------------------------------------------------------------------------------------------------------------
+                                             seccion servicios
+-----------------------------------------------------------------------------------------------------------------------*/
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+
+}
+.cont-experts{
+    width: 100%;
+}
+
+.cont-experts img{
+    width: 80%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------
+                                            footer
+-----------------------------------------------------------------------------------------------------------------------*/
+
+
+#contacto{
+    background-color: #72afd3;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contactos{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.parr{
+    font-weight:  500;
+    font-size: 20px;
+    color: black;
+}
+.parr+p{
+    font-weight:  500;
+    font-size: 17px;
+    color: black;
+    
+}
+
+.redes-sociales img{
+    width: 30px;
+    height: 30px;
+    
+  }
+
+
+@media(min-width:700px) {
+    .titulo{
+        font-size: 60px;
+        margin-bottom: 15px;
+        
+    }
+    .copy{
+        font-weight: 300;
+        font-size: 25x;
+    }
+    .subtitulo{
+    
+        font-size: 40px;
+    }
+    
+    .contenedor-servicio{
+        flex-direction: row;
+    }
+    .contenedor-servicio img{
+        width: 40%;
+    }
+    .checklist-servicio{
+        width: 45%;
+    }
+    .menu-navegacion{
+        
+        width: 30vw;
+    }
+  
+/* ---------------------------------------------------------------------------------------------------------------------
+                                             seccion galeria 
+-----------------------------------------------------------------------------------------------------------------------*/
+    .contenedor-galeria{
+        flex-direction: row;
+    }
+    
+    .img-galeria{
+        width: 31%;
+        
+    }
+    .agregar-imagen{
+        width: 60%;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: transform .3s .2s;
+    }
+    /* ---------------------------------------------------------------------------------------------------------------------
+                                             seccion servicios
+-----------------------------------------------------------------------------------------------------------------------*/
+   
+
+.experts{
+   flex-direction: row;
+
+}
+.cont-experts{
+    width: 25%;
+}
+
+.cont-experts img{
+    width: 80%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+                                             footer
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background-color: #72afd3;
+
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top:60px;
+    padding-bottom: 40px;
+}
+.contactos{
+    width: 45%;
+}
+.redes-sociales{
+    width: 50%;
+}
+.redes-sociales img{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  
+}
+
+    
+}
